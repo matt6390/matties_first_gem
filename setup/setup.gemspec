@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "matties_first_gem/version"
+require "setup/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "matties_first_gem"
-  spec.version       = MattiesFirstGem::VERSION
+  spec.name          = "setup"
+  spec.version       = Setup::VERSION
   spec.authors       = ["matt6390"]
   spec.email         = ["matthewstone639@gmail.com"]
 
@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  
+
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
